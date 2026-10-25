@@ -4,8 +4,128 @@
 ========================================== */
 
 /* ==========================================
+   VARIABLES
+========================================== */
+:root {
+    --color-primario: #1e4f73;
+    --color-secundario: #337d78;
+    --color-texto: #243746;
+    --color-fondo: #f1f5f9;
+    --color-blanco: #ffffff;
+
+    --fuente: Arial, Helvetica, sans-serif;
+    --espacio: 20px;
+    --bordes: 10px;
+}
+
+/* ==========================================
    1. ESTILOS GENERALES
 ========================================== */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fuente);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-primario);
+}
+
+/* ==========================================
+   2. ENCABEZADO Y MENU
+========================================== */
+.encabezado {
+    background-color: var(--color-primario);
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: var(--color-blanco);
+    margin: 0;
+}
+
+.logo p {
+    color: #dceaf5;
+    margin: 0;
+    font-size: 14px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    display: block;
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: var(--bordes);
+}
+
+.menu a:hover {
+    background-color: #dceaf5;
+    color: var(--color-primario);
+}
+
+/* ==========================================
+   3. SECCION PRINCIPAL
+========================================== */
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 30px;
+    background-color: #e2edf5;
+}
+
+.principal-texto {
+    max-width: 500px;
+}
+
+.principal h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+.principal p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.avatar {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 5px solid var(--color-secundario);
+    object-fit: cover;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--bordes);
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: var(--color-primario);
 }
