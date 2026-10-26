@@ -294,3 +294,51 @@ h3 {
 .pie a {
     color: #dceaf5;
 }
+
+/* ==========================================
+   9. EFECTOS HOVER Y TRANSICIONES
+========================================== */
+.menu a,
+.boton,
+.tarjeta,
+.habilidad {
+    transition: 0.3s;
+}
+
+.menu a:focus-visible {
+    outline: 3px solid #ffd166;
+    outline-offset: 3px;
+}
+
+.habilidad:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+.tarjeta:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px #b8c9d6;
+}
+
+.pie a:hover {
+    color: var(--color-blanco);
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: var(--color-secundario);
+    outline: none;
+}
+
+/* ==========================================
+   10. DISENO RESPONSIVE (pantallas pequenas)
+========================================== */
+@media (max-width: 700px) {
+    .principal h1 {
+        font-size: 2rem;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+}
