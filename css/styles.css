@@ -201,3 +201,49 @@ h3 {
     color: var(--color-secundario);
     font-weight: bold;
 }
+
+/* ==========================================
+   6. MENU HAMBURGUESA Y RESPONSIVE (celulares)
+========================================== */
+.menu-hamburguesa {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-blanco);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .encabezado {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.activo {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 10px;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
