@@ -247,3 +247,50 @@ h3 {
         text-align: center;
     }
 }
+
+/* ==========================================
+   7. FORMULARIO DE CONTACTO
+========================================== */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 500px;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    font-family: var(--fuente);
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #b8cddd;
+    border-radius: 8px;
+}
+
+.formulario .boton {
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+/* ==========================================
+   8. PIE DE PAGINA
+========================================== */
+.pie {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.pie p {
+    margin: 5px 0;
+}
+
+.pie a {
+    color: #dceaf5;
+}
